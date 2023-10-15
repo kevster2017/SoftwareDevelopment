@@ -19,7 +19,9 @@ namespace SoftwareDevelopment
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            HomePage home = new HomePage();
+            home.Show();
+           // this.Close();
         }
     }
 }

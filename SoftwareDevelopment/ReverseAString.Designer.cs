@@ -1,6 +1,6 @@
 ﻿namespace SoftwareDevelopment
 {
-    partial class ReverseAString
+    partial class txtRevStringOutput
     {
         /// <summary>
         /// Required designer variable.
@@ -30,12 +30,13 @@
         {
             label1 = new Label();
             label2 = new Label();
-            textBox1 = new TextBox();
-            button1 = new Button();
-            button2 = new Button();
+            txtString = new TextBox();
+            btnBack = new Button();
+            btnViewCode = new Button();
             label3 = new Label();
-            label4 = new Label();
-            button3 = new Button();
+            btnClear = new Button();
+            btnSubmit = new Button();
+            outputLabel = new Label();
             SuspendLayout();
             // 
             // label1
@@ -58,30 +59,33 @@
             label2.TabIndex = 1;
             label2.Text = "Enter some text";
             // 
-            // textBox1
+            // txtString
             // 
-            textBox1.Location = new Point(332, 133);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(265, 23);
-            textBox1.TabIndex = 2;
+            txtString.Location = new Point(332, 133);
+            txtString.Name = "txtString";
+            txtString.Size = new Size(265, 23);
+            txtString.TabIndex = 2;
+            txtString.TextChanged += txtString_TextChanged;
             // 
-            // button1
+            // btnBack
             // 
-            button1.Location = new Point(210, 344);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 3;
-            button1.Text = "Back";
-            button1.UseVisualStyleBackColor = true;
+            btnBack.Location = new Point(179, 344);
+            btnBack.Name = "btnBack";
+            btnBack.Size = new Size(75, 23);
+            btnBack.TabIndex = 3;
+            btnBack.Text = "Back";
+            btnBack.UseVisualStyleBackColor = true;
+            btnBack.Click += button1_Click;
             // 
-            // button2
+            // btnViewCode
             // 
-            button2.Location = new Point(535, 344);
-            button2.Name = "button2";
-            button2.Size = new Size(111, 23);
-            button2.TabIndex = 4;
-            button2.Text = "View Code";
-            button2.UseVisualStyleBackColor = true;
+            btnViewCode.Location = new Point(535, 344);
+            btnViewCode.Name = "btnViewCode";
+            btnViewCode.Size = new Size(111, 23);
+            btnViewCode.TabIndex = 4;
+            btnViewCode.Text = "View Code";
+            btnViewCode.UseVisualStyleBackColor = true;
+            btnViewCode.Click += btnViewCode_Click;
             // 
             // label3
             // 
@@ -93,40 +97,53 @@
             label3.TabIndex = 5;
             label3.Text = "Reversed Text";
             // 
-            // label4
+            // btnClear
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(332, 228);
-            label4.Name = "label4";
-            label4.Size = new Size(38, 15);
-            label4.TabIndex = 6;
-            label4.Text = "label4";
+            btnClear.Location = new Point(416, 344);
+            btnClear.Name = "btnClear";
+            btnClear.Size = new Size(75, 23);
+            btnClear.TabIndex = 7;
+            btnClear.Text = "Clear";
+            btnClear.UseVisualStyleBackColor = true;
+            btnClear.Click += button3_Click;
             // 
-            // button3
+            // btnSubmit
             // 
-            button3.Location = new Point(366, 344);
-            button3.Name = "button3";
-            button3.Size = new Size(75, 23);
-            button3.TabIndex = 7;
-            button3.Text = "Clear";
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
+            btnSubmit.Location = new Point(309, 344);
+            btnSubmit.Name = "btnSubmit";
+            btnSubmit.Size = new Size(75, 23);
+            btnSubmit.TabIndex = 8;
+            btnSubmit.Text = "Submit";
+            btnSubmit.UseVisualStyleBackColor = true;
+            btnSubmit.Click += btnSubmit_Click;
             // 
-            // ReverseAString
+            // outputLabel
+            // 
+            outputLabel.AutoSize = true;
+            outputLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            outputLabel.Location = new Point(332, 228);
+            outputLabel.Name = "outputLabel";
+            outputLabel.Size = new Size(59, 21);
+            outputLabel.TabIndex = 6;
+            outputLabel.Text = "Output";
+            // 
+            // txtRevStringOutput
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button3);
-            Controls.Add(label4);
+            Controls.Add(btnSubmit);
+            Controls.Add(btnClear);
+            Controls.Add(outputLabel);
             Controls.Add(label3);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(textBox1);
+            Controls.Add(btnViewCode);
+            Controls.Add(btnBack);
+            Controls.Add(txtString);
             Controls.Add(label2);
             Controls.Add(label1);
-            Name = "ReverseAString";
+            Name = "txtRevStringOutput";
             Text = "ReverseAString";
+            Load += ReverseAString_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -135,11 +152,12 @@
 
         private Label label1;
         private Label label2;
-        private TextBox textBox1;
-        private Button button1;
-        private Button button2;
+        private TextBox txtString;
+        private Button btnBack;
+        private Button btnViewCode;
         private Label label3;
-        private Label label4;
-        private Button button3;
+        private Button btnClear;
+        private Button btnSubmit;
+        private Label outputLabel;
     }
 }

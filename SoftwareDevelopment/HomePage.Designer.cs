@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
+            btnRevStr = new Button();
             label1 = new Label();
             SuspendLayout();
             // 
-            // button1
+            // btnRevStr
             // 
-            button1.Location = new Point(96, 132);
-            button1.Margin = new Padding(4, 4, 4, 4);
-            button1.Name = "button1";
-            button1.Size = new Size(188, 59);
-            button1.TabIndex = 0;
-            button1.Text = "Reverse a string";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btnRevStr.Location = new Point(96, 132);
+            btnRevStr.Margin = new Padding(4);
+            btnRevStr.Name = "btnRevStr";
+            btnRevStr.Size = new Size(188, 59);
+            btnRevStr.TabIndex = 0;
+            btnRevStr.Text = "Reverse a string";
+            btnRevStr.UseVisualStyleBackColor = true;
+            btnRevStr.Click += button1_Click;
             // 
             // label1
             // 
@@ -60,9 +60,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1029, 630);
             Controls.Add(label1);
-            Controls.Add(button1);
+            Controls.Add(btnRevStr);
             Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "HomePage";
             Text = "HomePage";
             ResumeLayout(false);
@@ -71,7 +71,7 @@
 
         #endregion
 
-        private Button button1;
+        private Button btnRevStr;
         private Label label1;
     }
 }

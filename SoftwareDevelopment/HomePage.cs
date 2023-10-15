@@ -19,7 +19,9 @@ namespace SoftwareDevelopment
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            txtRevStringOutput rev = new txtRevStringOutput();  
+            rev.Show();
+            this.Close();
         }
     }
 }
