@@ -20,7 +20,7 @@ namespace SoftwareDevelopment
         private void button3_Click(object sender, EventArgs e)
         {
             txtString.Clear();
-            
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -60,7 +60,7 @@ namespace SoftwareDevelopment
 
                 return rev;
             }
-           
+
 
 
             outputLabel.Text = Reverse(userInput);

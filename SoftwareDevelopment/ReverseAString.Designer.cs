@@ -69,22 +69,26 @@
             // 
             // btnBack
             // 
-            btnBack.Location = new Point(179, 344);
+            btnBack.BackColor = Color.Red;
+            btnBack.Font = new Font("Arial Narrow", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnBack.Location = new Point(545, 344);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(75, 23);
+            btnBack.Size = new Size(104, 45);
             btnBack.TabIndex = 3;
             btnBack.Text = "Back";
-            btnBack.UseVisualStyleBackColor = true;
+            btnBack.UseVisualStyleBackColor = false;
             btnBack.Click += button1_Click;
             // 
             // btnViewCode
             // 
-            btnViewCode.Location = new Point(535, 344);
+            btnViewCode.BackColor = Color.DodgerBlue;
+            btnViewCode.Font = new Font("Arial Narrow", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnViewCode.Location = new Point(410, 344);
             btnViewCode.Name = "btnViewCode";
-            btnViewCode.Size = new Size(111, 23);
+            btnViewCode.Size = new Size(111, 45);
             btnViewCode.TabIndex = 4;
             btnViewCode.Text = "View Code";
-            btnViewCode.UseVisualStyleBackColor = true;
+            btnViewCode.UseVisualStyleBackColor = false;
             btnViewCode.Click += btnViewCode_Click;
             // 
             // label3
@@ -99,29 +103,33 @@
             // 
             // btnClear
             // 
-            btnClear.Location = new Point(416, 344);
+            btnClear.BackColor = Color.Yellow;
+            btnClear.Font = new Font("Arial Narrow", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnClear.Location = new Point(287, 344);
             btnClear.Name = "btnClear";
-            btnClear.Size = new Size(75, 23);
+            btnClear.Size = new Size(93, 45);
             btnClear.TabIndex = 7;
             btnClear.Text = "Clear";
-            btnClear.UseVisualStyleBackColor = true;
+            btnClear.UseVisualStyleBackColor = false;
             btnClear.Click += button3_Click;
             // 
             // btnSubmit
             // 
-            btnSubmit.Location = new Point(309, 344);
+            btnSubmit.BackColor = Color.FromArgb(0, 192, 0);
+            btnSubmit.Font = new Font("Arial Narrow", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSubmit.Location = new Point(150, 344);
             btnSubmit.Name = "btnSubmit";
-            btnSubmit.Size = new Size(75, 23);
+            btnSubmit.Size = new Size(117, 45);
             btnSubmit.TabIndex = 8;
             btnSubmit.Text = "Submit";
-            btnSubmit.UseVisualStyleBackColor = true;
+            btnSubmit.UseVisualStyleBackColor = false;
             btnSubmit.Click += btnSubmit_Click;
             // 
             // outputLabel
             // 
             outputLabel.AutoSize = true;
             outputLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            outputLabel.Location = new Point(332, 228);
+            outputLabel.Location = new Point(332, 223);
             outputLabel.Name = "outputLabel";
             outputLabel.Size = new Size(59, 21);
             outputLabel.TabIndex = 6;
