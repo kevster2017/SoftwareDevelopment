@@ -46,7 +46,7 @@ namespace SoftwareDevelopment
 
         private void btnDisplay_Click(object sender, EventArgs e)
         {
-            string str = " private void btnSubmit_Click(object sender, EventArgs e)\r\n        {\r\n            string userInput = txtString.Text;\r\n\r\n            static string Reverse(string userInput)\r\n            {\r\n                string rev = \"\";\r\n                int length = userInput.Length;\r\n\r\n                for (int i = length - 1; i >= 0; i--)\r\n                {\r\n                    rev += userInput[i];\r\n                }\r\n\r\n                return rev;\r\n            }\r\n           \r\n\r\n\r\n            outputLabel.Text = Reverse(userInput);\r\n\r\n\r\n        }";
+            string str = "private void btnSubmit_Click(object sender, EventArgs e)\r\n        {\r\n            string userInput = txtString.Text;\r\n\r\n            static string Reverse(string userInput)\r\n            {\r\n                string rev = \"\";\r\n                int length = userInput.Length;\r\n\r\n                for (int i = length - 1; i >= 0; i--)\r\n                {\r\n                    rev += userInput[i];\r\n                }\r\n\r\n                return rev;\r\n            }\r\n           \r\n\r\n\r\n            outputLabel.Text = Reverse(userInput);\r\n\r\n\r\n        }";
 
             textBoxCode.Text = str;
         }

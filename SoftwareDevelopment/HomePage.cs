@@ -19,8 +19,15 @@ namespace SoftwareDevelopment
 
         private void button1_Click(object sender, EventArgs e)
         {
-            txtRevStringOutput rev = new txtRevStringOutput();  
+            txtRevStringOutput rev = new txtRevStringOutput();
             rev.Show();
+            this.Close();
+        }
+
+        private void btnPal_Click(object sender, EventArgs e)
+        {
+            Palindrome pal = new Palindrome();
+            pal.Show();
             this.Close();
         }
     }

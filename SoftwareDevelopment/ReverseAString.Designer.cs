@@ -48,6 +48,7 @@
             label1.Size = new Size(195, 23);
             label1.TabIndex = 0;
             label1.Text = "Reverse a string";
+         
             // 
             // label2
             // 
@@ -58,6 +59,7 @@
             label2.Size = new Size(117, 21);
             label2.TabIndex = 1;
             label2.Text = "Enter some text";
+            
             // 
             // txtString
             // 
@@ -100,6 +102,7 @@
             label3.Size = new Size(104, 21);
             label3.TabIndex = 5;
             label3.Text = "Reversed Text";
+          
             // 
             // btnClear
             // 
@@ -134,6 +137,7 @@
             outputLabel.Size = new Size(59, 21);
             outputLabel.TabIndex = 6;
             outputLabel.Text = "Output";
+          
             // 
             // txtRevStringOutput
             // 

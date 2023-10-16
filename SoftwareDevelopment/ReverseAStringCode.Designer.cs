@@ -45,7 +45,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Showcard Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(369, 84);
+            label1.Location = new Point(419, 50);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(254, 23);
@@ -55,7 +55,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(191, 165);
+            label2.Location = new Point(192, 143);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
             label2.Size = new Size(184, 23);
@@ -66,7 +66,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(206, 221);
+            label3.Location = new Point(207, 199);
             label3.Name = "label3";
             label3.Size = new Size(140, 18);
             label3.TabIndex = 2;
@@ -76,7 +76,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(206, 256);
+            label4.Location = new Point(207, 234);
             label4.Name = "label4";
             label4.Size = new Size(184, 18);
             label4.TabIndex = 3;
@@ -86,7 +86,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(206, 287);
+            label5.Location = new Point(207, 265);
             label5.Name = "label5";
             label5.Size = new Size(226, 18);
             label5.TabIndex = 4;
@@ -96,7 +96,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.Location = new Point(206, 322);
+            label6.Location = new Point(207, 300);
             label6.Name = "label6";
             label6.Size = new Size(258, 18);
             label6.TabIndex = 5;
@@ -107,7 +107,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(206, 361);
+            label7.Location = new Point(207, 339);
             label7.Name = "label7";
             label7.Size = new Size(419, 18);
             label7.TabIndex = 6;
@@ -125,7 +125,7 @@
             // btnDisplay
             // 
             btnDisplay.BackColor = Color.FromArgb(0, 192, 0);
-            btnDisplay.Location = new Point(178, 454);
+            btnDisplay.Location = new Point(179, 444);
             btnDisplay.Name = "btnDisplay";
             btnDisplay.Size = new Size(118, 40);
             btnDisplay.TabIndex = 8;
@@ -136,7 +136,7 @@
             // btnClear
             // 
             btnClear.BackColor = Color.Yellow;
-            btnClear.Location = new Point(328, 454);
+            btnClear.Location = new Point(329, 444);
             btnClear.Name = "btnClear";
             btnClear.Size = new Size(118, 40);
             btnClear.TabIndex = 9;
@@ -147,7 +147,7 @@
             // btnBack
             // 
             btnBack.BackColor = Color.Red;
-            btnBack.Location = new Point(488, 454);
+            btnBack.Location = new Point(489, 444);
             btnBack.Name = "btnBack";
             btnBack.Size = new Size(118, 40);
             btnBack.TabIndex = 10;

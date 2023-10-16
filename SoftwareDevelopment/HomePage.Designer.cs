@@ -30,6 +30,7 @@
         {
             btnRevStr = new Button();
             label1 = new Label();
+            btnPal = new Button();
             SuspendLayout();
             // 
             // btnRevStr
@@ -54,11 +55,22 @@
             label1.TabIndex = 1;
             label1.Text = "Select an algorithm to test";
             // 
+            // btnPal
+            // 
+            btnPal.Location = new Point(329, 132);
+            btnPal.Name = "btnPal";
+            btnPal.Size = new Size(161, 59);
+            btnPal.TabIndex = 2;
+            btnPal.Text = "Palindrome";
+            btnPal.UseVisualStyleBackColor = true;
+            btnPal.Click += btnPal_Click;
+            // 
             // HomePage
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1029, 630);
+            Controls.Add(btnPal);
             Controls.Add(label1);
             Controls.Add(btnRevStr);
             Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
@@ -73,5 +85,6 @@
 
         private Button btnRevStr;
         private Label label1;
+        private Button btnPal;
     }
 }
