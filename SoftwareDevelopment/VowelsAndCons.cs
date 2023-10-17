@@ -75,9 +75,5 @@ namespace SoftwareDevelopment
             outputLabel.Text = ($"The string {st} contains \n{vowels} vowels and \n{cons} consonants");
         }
 
-        private void outputLabel_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -33,11 +33,18 @@
             btnPal = new Button();
             Occurences = new Button();
             btnVowelCons = new Button();
+            button1 = new Button();
+            button2 = new Button();
+            btnPrimeNumber = new Button();
+            button4 = new Button();
+            label2 = new Label();
+            label3 = new Label();
+            btnSumArray = new Button();
             SuspendLayout();
             // 
             // btnRevStr
             // 
-            btnRevStr.Location = new Point(96, 132);
+            btnRevStr.Location = new Point(96, 177);
             btnRevStr.Margin = new Padding(4);
             btnRevStr.Name = "btnRevStr";
             btnRevStr.Size = new Size(188, 59);
@@ -50,7 +57,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Showcard Gothic", 14.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label1.Location = new Point(267, 62);
+            label1.Location = new Point(329, 57);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(329, 23);
@@ -59,7 +66,7 @@
             // 
             // btnPal
             // 
-            btnPal.Location = new Point(329, 132);
+            btnPal.Location = new Point(329, 177);
             btnPal.Name = "btnPal";
             btnPal.Size = new Size(161, 59);
             btnPal.TabIndex = 2;
@@ -69,7 +76,7 @@
             // 
             // Occurences
             // 
-            Occurences.Location = new Point(546, 132);
+            Occurences.Location = new Point(546, 177);
             Occurences.Name = "Occurences";
             Occurences.Size = new Size(161, 59);
             Occurences.TabIndex = 3;
@@ -79,7 +86,7 @@
             // 
             // btnVowelCons
             // 
-            btnVowelCons.Location = new Point(744, 132);
+            btnVowelCons.Location = new Point(744, 177);
             btnVowelCons.Name = "btnVowelCons";
             btnVowelCons.Size = new Size(151, 59);
             btnVowelCons.TabIndex = 4;
@@ -87,11 +94,84 @@
             btnVowelCons.UseVisualStyleBackColor = true;
             btnVowelCons.Click += btnVowelCons_Click;
             // 
+            // button1
+            // 
+            button1.Location = new Point(744, 318);
+            button1.Name = "button1";
+            button1.Size = new Size(151, 59);
+            button1.TabIndex = 8;
+            button1.Text = "Vowels and Consonants";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(546, 318);
+            button2.Name = "button2";
+            button2.Size = new Size(161, 59);
+            button2.TabIndex = 7;
+            button2.Text = "Occurrences";
+            button2.UseVisualStyleBackColor = true;
+            // 
+            // btnPrimeNumber
+            // 
+            btnPrimeNumber.Location = new Point(329, 318);
+            btnPrimeNumber.Name = "btnPrimeNumber";
+            btnPrimeNumber.Size = new Size(161, 59);
+            btnPrimeNumber.TabIndex = 6;
+            btnPrimeNumber.Text = "Prime Number";
+            btnPrimeNumber.UseVisualStyleBackColor = true;
+            btnPrimeNumber.Click += btnPrimeNumber_Click;
+            // 
+            // button4
+            // 
+            button4.Location = new Point(0, 0);
+            button4.Name = "button4";
+            button4.Size = new Size(75, 23);
+            button4.TabIndex = 11;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Location = new Point(96, 126);
+            label2.Name = "label2";
+            label2.Size = new Size(64, 19);
+            label2.TabIndex = 9;
+            label2.Text = "Strings";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Location = new Point(96, 270);
+            label3.Name = "label3";
+            label3.Size = new Size(79, 19);
+            label3.TabIndex = 10;
+            label3.Text = "Numbers";
+            // 
+            // btnSumArray
+            // 
+            btnSumArray.Location = new Point(96, 318);
+            btnSumArray.Margin = new Padding(4);
+            btnSumArray.Name = "btnSumArray";
+            btnSumArray.Size = new Size(188, 59);
+            btnSumArray.TabIndex = 12;
+            btnSumArray.Text = "Sum up array elements";
+            btnSumArray.UseVisualStyleBackColor = true;
+            btnSumArray.Click += btnSumArray_Click;
+            // 
             // HomePage
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1029, 630);
+            Controls.Add(btnSumArray);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(button1);
+            Controls.Add(button2);
+            Controls.Add(btnPrimeNumber);
+            Controls.Add(button4);
             Controls.Add(btnVowelCons);
             Controls.Add(Occurences);
             Controls.Add(btnPal);
@@ -112,5 +192,12 @@
         private Button btnPal;
         private Button Occurences;
         private Button btnVowelCons;
+        private Button button1;
+        private Button button2;
+        private Button btnPrimeNumber;
+        private Button button4;
+        private Label label2;
+        private Label label3;
+        private Button btnSumArray;
     }
 }

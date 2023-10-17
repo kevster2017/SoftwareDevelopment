@@ -44,5 +44,24 @@ namespace SoftwareDevelopment
             vac.Show();
             this.Close();
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSumArray_Click(object sender, EventArgs e)
+        {
+            SumArray sum = new SumArray();
+            sum.Show();
+            this.Close();
+        }
+
+        private void btnPrimeNumber_Click(object sender, EventArgs e)
+        {
+            PrimeNumber prime = new PrimeNumber();
+            prime.Show();
+            this.Close();
+        }
     }
 }
