@@ -31,6 +31,8 @@
             btnRevStr = new Button();
             label1 = new Label();
             btnPal = new Button();
+            Occurences = new Button();
+            btnVowelCons = new Button();
             SuspendLayout();
             // 
             // btnRevStr
@@ -65,11 +67,33 @@
             btnPal.UseVisualStyleBackColor = true;
             btnPal.Click += btnPal_Click;
             // 
+            // Occurences
+            // 
+            Occurences.Location = new Point(546, 132);
+            Occurences.Name = "Occurences";
+            Occurences.Size = new Size(161, 59);
+            Occurences.TabIndex = 3;
+            Occurences.Text = "Occurrences";
+            Occurences.UseVisualStyleBackColor = true;
+            Occurences.Click += button1_Click_1;
+            // 
+            // btnVowelCons
+            // 
+            btnVowelCons.Location = new Point(744, 132);
+            btnVowelCons.Name = "btnVowelCons";
+            btnVowelCons.Size = new Size(151, 59);
+            btnVowelCons.TabIndex = 4;
+            btnVowelCons.Text = "Vowels and Consonants";
+            btnVowelCons.UseVisualStyleBackColor = true;
+            btnVowelCons.Click += btnVowelCons_Click;
+            // 
             // HomePage
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1029, 630);
+            Controls.Add(btnVowelCons);
+            Controls.Add(Occurences);
             Controls.Add(btnPal);
             Controls.Add(label1);
             Controls.Add(btnRevStr);
@@ -86,5 +110,7 @@
         private Button btnRevStr;
         private Label label1;
         private Button btnPal;
+        private Button Occurences;
+        private Button btnVowelCons;
     }
 }

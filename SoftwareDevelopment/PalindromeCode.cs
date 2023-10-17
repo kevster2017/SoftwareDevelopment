@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace SoftwareDevelopment
 {
@@ -39,6 +40,15 @@ namespace SoftwareDevelopment
             HomePage home = new HomePage();
             home.Show();
             this.Close();
+        }
+
+        private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)
+        {
+            int scrollValue = vScrollBar1.Value;
+            textBoxCode.SelectionStart = scrollValue; // Set the selection start to the desired scroll position
+            textBoxCode.ScrollToCaret(); // Scroll to the caret position
+            vScrollBar1.Minimum = 0;
+            vScrollBar1.Maximum = Math.Max(0, textBoxCode.Text.Length - textBoxCode.Height);
         }
     }
 }

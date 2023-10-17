@@ -30,5 +30,19 @@ namespace SoftwareDevelopment
             pal.Show();
             this.Close();
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Occurrences occur = new Occurrences();
+            occur.Show();
+            this.Close();
+        }
+
+        private void btnVowelCons_Click(object sender, EventArgs e)
+        {
+            Occurrences occur = new Occurrences();
+            occur.Show();
+            this.Close();
+        }
     }
 }
