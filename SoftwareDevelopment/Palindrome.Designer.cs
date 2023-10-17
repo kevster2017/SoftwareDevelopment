@@ -73,6 +73,7 @@
             outputLabel.Size = new Size(59, 21);
             outputLabel.TabIndex = 15;
             outputLabel.Text = "Output";
+            outputLabel.Click += outputLabel_Click;
             // 
             // label3
             // 
@@ -83,6 +84,7 @@
             label3.Size = new Size(96, 21);
             label3.TabIndex = 14;
             label3.Text = "Palindrome?";
+            label3.Click += label3_Click;
             // 
             // btnViewCode
             // 
@@ -114,6 +116,7 @@
             txtString.Name = "txtString";
             txtString.Size = new Size(265, 23);
             txtString.TabIndex = 11;
+            txtString.TextChanged += txtString_TextChanged;
             // 
             // label2
             // 
@@ -124,6 +127,7 @@
             label2.Size = new Size(117, 21);
             label2.TabIndex = 10;
             label2.Text = "Enter some text";
+            label2.Click += label2_Click;
             // 
             // label1
             // 
@@ -134,6 +138,7 @@
             label1.Size = new Size(425, 23);
             label1.TabIndex = 9;
             label1.Text = "Determine if a string is a Palindrome";
+            label1.Click += label1_Click;
             // 
             // label4
             // 
@@ -144,6 +149,7 @@
             label4.Size = new Size(544, 18);
             label4.TabIndex = 18;
             label4.Text = "A Palindrome is a string that stays the same when the characters are reversed";
+            label4.Click += label4_Click;
             // 
             // Palindrome
             // 

@@ -55,7 +55,7 @@ namespace SoftwareDevelopment
                 return count;
             }
 
-            string st = txtString.Text; ;
+            string st = txtString.Text;
             char c = textBoxChar.Text[0];
 
             int count = Occur(st, c);

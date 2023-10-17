@@ -40,8 +40,8 @@ namespace SoftwareDevelopment
 
         private void btnVowelCons_Click(object sender, EventArgs e)
         {
-            Occurrences occur = new Occurrences();
-            occur.Show();
+            VowelsAndCons vac = new VowelsAndCons();
+            vac.Show();
             this.Close();
         }
     }

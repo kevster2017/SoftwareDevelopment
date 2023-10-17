@@ -24,8 +24,8 @@ namespace SoftwareDevelopment
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            HomePage home = new HomePage();
-            home.Show();
+            Occurrences occur = new Occurrences();
+            occur.Show();
             this.Close();
         }
 

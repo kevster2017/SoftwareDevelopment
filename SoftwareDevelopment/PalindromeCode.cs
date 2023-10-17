@@ -50,5 +50,38 @@ namespace SoftwareDevelopment
             vScrollBar1.Minimum = 0;
             vScrollBar1.Maximum = Math.Max(0, textBoxCode.Text.Length - textBoxCode.Height);
         }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxCode_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+        }
     }
 }

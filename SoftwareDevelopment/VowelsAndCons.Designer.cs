@@ -60,6 +60,7 @@
             btnSubmit.TabIndex = 27;
             btnSubmit.Text = "Submit";
             btnSubmit.UseVisualStyleBackColor = false;
+            btnSubmit.Click += btnSubmit_Click;
             // 
             // btnClear
             // 
@@ -71,6 +72,7 @@
             btnClear.TabIndex = 26;
             btnClear.Text = "Clear";
             btnClear.UseVisualStyleBackColor = false;
+            btnClear.Click += btnClear_Click;
             // 
             // outputLabel
             // 
@@ -81,6 +83,7 @@
             outputLabel.Size = new Size(59, 21);
             outputLabel.TabIndex = 25;
             outputLabel.Text = "Output";
+            outputLabel.Click += outputLabel_Click;
             // 
             // label3
             // 
@@ -88,9 +91,9 @@
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label3.Location = new Point(158, 264);
             label3.Name = "label3";
-            label3.Size = new Size(96, 21);
+            label3.Size = new Size(59, 21);
             label3.TabIndex = 24;
-            label3.Text = "Palindrome?";
+            label3.Text = "Output";
             // 
             // btnViewCode
             // 
@@ -102,6 +105,7 @@
             btnViewCode.TabIndex = 23;
             btnViewCode.Text = "View Code";
             btnViewCode.UseVisualStyleBackColor = false;
+            btnViewCode.Click += btnViewCode_Click_1;
             // 
             // btnBack
             // 
@@ -113,6 +117,7 @@
             btnBack.TabIndex = 22;
             btnBack.Text = "Back";
             btnBack.UseVisualStyleBackColor = false;
+            btnBack.Click += btnBack_Click;
             // 
             // txtString
             // 
