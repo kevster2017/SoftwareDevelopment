@@ -111,9 +111,9 @@
             label7.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label7.Location = new Point(128, 344);
             label7.Name = "label7";
-            label7.Size = new Size(219, 18);
+            label7.Size = new Size(388, 18);
             label7.TabIndex = 56;
-            label7.Text = "* Prompt the user for a number";
+            label7.Text = "* Second loop (j) to loop through array starting from i+1 ";
             // 
             // label6
             // 
@@ -121,9 +121,9 @@
             label6.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label6.Location = new Point(128, 384);
             label6.Name = "label6";
-            label6.Size = new Size(360, 18);
+            label6.Size = new Size(306, 18);
             label6.TabIndex = 55;
-            label6.Text = "* Pass user input as parameter to Factorial method";
+            label6.Text = "* If array[i] matches array[j], increment count";
             // 
             // label5
             // 
@@ -131,9 +131,9 @@
             label5.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label5.Location = new Point(128, 306);
             label5.Name = "label5";
-            label5.Size = new Size(205, 18);
+            label5.Size = new Size(246, 18);
             label5.TabIndex = 54;
-            label5.Text = "* Else return n * factorial(n-1)";
+            label5.Text = "* First loop (i) to loop through array";
             // 
             // label4
             // 
@@ -141,9 +141,9 @@
             label4.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label4.Location = new Point(128, 233);
             label4.Name = "label4";
-            label4.Size = new Size(402, 18);
+            label4.Size = new Size(112, 18);
             label4.TabIndex = 53;
-            label4.Text = "* Create Factorial method that takes a long parameter (n)";
+            label4.Text = "* Declare array";
             // 
             // label3
             // 
@@ -151,9 +151,9 @@
             label3.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label3.Location = new Point(128, 268);
             label3.Name = "label3";
-            label3.Size = new Size(132, 18);
+            label3.Size = new Size(173, 18);
             label3.TabIndex = 52;
-            label3.Text = "* If n == 0, return 1";
+            label3.Text = "* Declare count variable";
             // 
             // label2
             // 
@@ -162,20 +162,20 @@
             label2.Location = new Point(95, 177);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(287, 23);
+            label2.Size = new Size(311, 23);
             label2.TabIndex = 51;
-            label2.Text = "How to find the factorial of an integer";
+            label2.Text = "How to search array and count matches";
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Showcard Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(325, 82);
+            label1.Location = new Point(210, 82);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(374, 23);
+            label1.Size = new Size(634, 23);
             label1.TabIndex = 50;
-            label1.Text = "Find the factorial of an integer";
+            label1.Text = "search array for matching numbers and count matches";
             // 
             // MatchingNumbersCode
             // 
