@@ -63,5 +63,19 @@ namespace SoftwareDevelopment
             prime.Show();
             this.Close();
         }
+
+        private void btnMatchingNumbers_Click(object sender, EventArgs e)
+        {
+            MatchingNumbers match = new MatchingNumbers();
+            match.Show();
+            this.Close();
+        }
+
+        private void btnFactorialInteger_Click(object sender, EventArgs e)
+        {
+            Factorial fact = new Factorial();
+            fact.Show();
+            this.Close();
+        }
     }
 }

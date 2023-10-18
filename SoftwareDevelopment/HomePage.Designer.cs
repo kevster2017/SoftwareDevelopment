@@ -33,8 +33,8 @@
             btnPal = new Button();
             Occurences = new Button();
             btnVowelCons = new Button();
-            button1 = new Button();
-            button2 = new Button();
+            btnFactorialInteger = new Button();
+            btnMatchingNumbers = new Button();
             btnPrimeNumber = new Button();
             button4 = new Button();
             label2 = new Label();
@@ -94,23 +94,25 @@
             btnVowelCons.UseVisualStyleBackColor = true;
             btnVowelCons.Click += btnVowelCons_Click;
             // 
-            // button1
+            // btnFactorialInteger
             // 
-            button1.Location = new Point(744, 318);
-            button1.Name = "button1";
-            button1.Size = new Size(151, 59);
-            button1.TabIndex = 8;
-            button1.Text = "Vowels and Consonants";
-            button1.UseVisualStyleBackColor = true;
+            btnFactorialInteger.Location = new Point(744, 318);
+            btnFactorialInteger.Name = "btnFactorialInteger";
+            btnFactorialInteger.Size = new Size(151, 59);
+            btnFactorialInteger.TabIndex = 8;
+            btnFactorialInteger.Text = "Factorial of Integer";
+            btnFactorialInteger.UseVisualStyleBackColor = true;
+            btnFactorialInteger.Click += btnFactorialInteger_Click;
             // 
-            // button2
+            // btnMatchingNumbers
             // 
-            button2.Location = new Point(546, 318);
-            button2.Name = "button2";
-            button2.Size = new Size(161, 59);
-            button2.TabIndex = 7;
-            button2.Text = "Occurrences";
-            button2.UseVisualStyleBackColor = true;
+            btnMatchingNumbers.Location = new Point(546, 318);
+            btnMatchingNumbers.Name = "btnMatchingNumbers";
+            btnMatchingNumbers.Size = new Size(161, 59);
+            btnMatchingNumbers.TabIndex = 7;
+            btnMatchingNumbers.Text = "Matching numbers";
+            btnMatchingNumbers.UseVisualStyleBackColor = true;
+            btnMatchingNumbers.Click += btnMatchingNumbers_Click;
             // 
             // btnPrimeNumber
             // 
@@ -168,8 +170,8 @@
             Controls.Add(btnSumArray);
             Controls.Add(label3);
             Controls.Add(label2);
-            Controls.Add(button1);
-            Controls.Add(button2);
+            Controls.Add(btnFactorialInteger);
+            Controls.Add(btnMatchingNumbers);
             Controls.Add(btnPrimeNumber);
             Controls.Add(button4);
             Controls.Add(btnVowelCons);
@@ -192,8 +194,8 @@
         private Button btnPal;
         private Button Occurences;
         private Button btnVowelCons;
-        private Button button1;
-        private Button button2;
+        private Button btnFactorialInteger;
+        private Button btnMatchingNumbers;
         private Button btnPrimeNumber;
         private Button button4;
         private Label label2;

@@ -1,6 +1,6 @@
 ﻿namespace SoftwareDevelopment
 {
-    partial class PrimeNumber
+    partial class Factorial
     {
         /// <summary>
         /// Required designer variable.
@@ -43,10 +43,10 @@
             // 
             btnSubmit.BackColor = Color.FromArgb(0, 192, 0);
             btnSubmit.Font = new Font("Arial Narrow", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            btnSubmit.Location = new Point(157, 351);
+            btnSubmit.Location = new Point(151, 351);
             btnSubmit.Name = "btnSubmit";
             btnSubmit.Size = new Size(117, 45);
-            btnSubmit.TabIndex = 27;
+            btnSubmit.TabIndex = 36;
             btnSubmit.Text = "Submit";
             btnSubmit.UseVisualStyleBackColor = false;
             btnSubmit.Click += btnSubmit_Click;
@@ -55,10 +55,10 @@
             // 
             btnClear.BackColor = Color.Yellow;
             btnClear.Font = new Font("Arial Narrow", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            btnClear.Location = new Point(294, 351);
+            btnClear.Location = new Point(288, 351);
             btnClear.Name = "btnClear";
             btnClear.Size = new Size(93, 45);
-            btnClear.TabIndex = 26;
+            btnClear.TabIndex = 35;
             btnClear.Text = "Clear";
             btnClear.UseVisualStyleBackColor = false;
             btnClear.Click += btnClear_Click;
@@ -67,32 +67,30 @@
             // 
             outputLabel.AutoSize = true;
             outputLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            outputLabel.Location = new Point(339, 240);
+            outputLabel.Location = new Point(333, 240);
             outputLabel.Name = "outputLabel";
             outputLabel.Size = new Size(59, 21);
-            outputLabel.TabIndex = 25;
+            outputLabel.TabIndex = 34;
             outputLabel.Text = "Output";
-            outputLabel.Click += outputLabel_Click;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(157, 240);
+            label3.Location = new Point(151, 240);
             label3.Name = "label3";
-            label3.Size = new Size(120, 21);
-            label3.TabIndex = 24;
-            label3.Text = "Prime Number?";
-            label3.Click += label3_Click;
+            label3.Size = new Size(68, 21);
+            label3.TabIndex = 33;
+            label3.Text = "Factorial";
             // 
             // btnViewCode
             // 
             btnViewCode.BackColor = Color.DodgerBlue;
             btnViewCode.Font = new Font("Arial Narrow", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            btnViewCode.Location = new Point(417, 351);
+            btnViewCode.Location = new Point(411, 351);
             btnViewCode.Name = "btnViewCode";
             btnViewCode.Size = new Size(111, 45);
-            btnViewCode.TabIndex = 23;
+            btnViewCode.TabIndex = 32;
             btnViewCode.Text = "View Code";
             btnViewCode.UseVisualStyleBackColor = false;
             btnViewCode.Click += btnViewCode_Click;
@@ -101,45 +99,42 @@
             // 
             btnBack.BackColor = Color.Red;
             btnBack.Font = new Font("Arial Narrow", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            btnBack.Location = new Point(552, 351);
+            btnBack.Location = new Point(546, 351);
             btnBack.Name = "btnBack";
             btnBack.Size = new Size(104, 45);
-            btnBack.TabIndex = 22;
+            btnBack.TabIndex = 31;
             btnBack.Text = "Back";
             btnBack.UseVisualStyleBackColor = false;
             btnBack.Click += btnBack_Click;
             // 
             // txtString
             // 
-            txtString.Location = new Point(339, 150);
+            txtString.Location = new Point(333, 150);
             txtString.Name = "txtString";
             txtString.Size = new Size(265, 23);
-            txtString.TabIndex = 21;
-            txtString.TextChanged += txtString_TextChanged;
+            txtString.TabIndex = 30;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(157, 152);
+            label2.Location = new Point(151, 152);
             label2.Name = "label2";
             label2.Size = new Size(117, 21);
-            label2.TabIndex = 20;
+            label2.TabIndex = 29;
             label2.Text = "Enter a number";
-            label2.Click += label2_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Showcard Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(190, 55);
+            label1.Location = new Point(184, 55);
             label1.Name = "label1";
-            label1.Size = new Size(455, 23);
-            label1.TabIndex = 19;
-            label1.Text = "Determine if a number is a Prime Number";
-            label1.Click += label1_Click;
+            label1.Size = new Size(374, 23);
+            label1.TabIndex = 28;
+            label1.Text = "Find the factorial of an integer";
             // 
-            // PrimeNumber
+            // Factorial
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -153,8 +148,8 @@
             Controls.Add(txtString);
             Controls.Add(label2);
             Controls.Add(label1);
-            Name = "PrimeNumber";
-            Text = "PrimeNumber";
+            Name = "Factorial";
+            Text = "Factorial";
             ResumeLayout(false);
             PerformLayout();
         }

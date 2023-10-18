@@ -25,19 +25,19 @@ namespace SoftwareDevelopment
 
             static Boolean isPrime(int n)
             {
-                if(n == 0 || n == 1)
+                if (n == 0 || n == 1)
                 {
                     return false;
                 }
-                
-                if(n == 2)
+
+                if (n == 2)
                 {
                     return true;
                 }
 
-                for(int i = 2; i <= n/2; i++) 
+                for (int i = 2; i <= n / 2; i++)
                 {
-                    if(n%i == 0)
+                    if (n % i == 0)
                     {
                         return false;
                     }
@@ -52,14 +52,14 @@ namespace SoftwareDevelopment
             {
                 outputLabel.Text = ($"{userInput} IS NOT a prime number");
             }
-          
+
             else
             {
                 outputLabel.Text = ($"{userInput} IS a prime number");
             }
 
 
-     
+
         }
 
         private void btnClear_Click(object sender, EventArgs e)
@@ -80,6 +80,27 @@ namespace SoftwareDevelopment
             HomePage home = new HomePage();
             home.Show();
             this.Close();
+        }
+
+        private void outputLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void txtString_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
         }
     }
 }
