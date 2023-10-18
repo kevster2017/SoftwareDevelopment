@@ -40,6 +40,8 @@
             label2 = new Label();
             label3 = new Label();
             btnSumArray = new Button();
+            btnRemoveOccurrences = new Button();
+            btnReverseArray = new Button();
             SuspendLayout();
             // 
             // btnRevStr
@@ -96,7 +98,7 @@
             // 
             // btnFactorialInteger
             // 
-            btnFactorialInteger.Location = new Point(744, 318);
+            btnFactorialInteger.Location = new Point(744, 421);
             btnFactorialInteger.Name = "btnFactorialInteger";
             btnFactorialInteger.Size = new Size(151, 59);
             btnFactorialInteger.TabIndex = 8;
@@ -106,7 +108,7 @@
             // 
             // btnMatchingNumbers
             // 
-            btnMatchingNumbers.Location = new Point(546, 318);
+            btnMatchingNumbers.Location = new Point(546, 421);
             btnMatchingNumbers.Name = "btnMatchingNumbers";
             btnMatchingNumbers.Size = new Size(161, 59);
             btnMatchingNumbers.TabIndex = 7;
@@ -116,7 +118,7 @@
             // 
             // btnPrimeNumber
             // 
-            btnPrimeNumber.Location = new Point(329, 318);
+            btnPrimeNumber.Location = new Point(329, 421);
             btnPrimeNumber.Name = "btnPrimeNumber";
             btnPrimeNumber.Size = new Size(161, 59);
             btnPrimeNumber.TabIndex = 6;
@@ -145,7 +147,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(96, 270);
+            label3.Location = new Point(96, 373);
             label3.Name = "label3";
             label3.Size = new Size(79, 19);
             label3.TabIndex = 10;
@@ -153,7 +155,7 @@
             // 
             // btnSumArray
             // 
-            btnSumArray.Location = new Point(96, 318);
+            btnSumArray.Location = new Point(96, 421);
             btnSumArray.Margin = new Padding(4);
             btnSumArray.Name = "btnSumArray";
             btnSumArray.Size = new Size(188, 59);
@@ -162,11 +164,34 @@
             btnSumArray.UseVisualStyleBackColor = true;
             btnSumArray.Click += btnSumArray_Click;
             // 
+            // btnRemoveOccurrences
+            // 
+            btnRemoveOccurrences.Location = new Point(96, 270);
+            btnRemoveOccurrences.Name = "btnRemoveOccurrences";
+            btnRemoveOccurrences.Size = new Size(188, 59);
+            btnRemoveOccurrences.TabIndex = 13;
+            btnRemoveOccurrences.Text = "Remove Occurrences";
+            btnRemoveOccurrences.UseVisualStyleBackColor = true;
+            btnRemoveOccurrences.Click += btnRemoveOccurrences_Click;
+            // 
+            // btnReverseArray
+            // 
+            btnReverseArray.Location = new Point(329, 270);
+            btnReverseArray.Margin = new Padding(4);
+            btnReverseArray.Name = "btnReverseArray";
+            btnReverseArray.Size = new Size(161, 59);
+            btnReverseArray.TabIndex = 14;
+            btnReverseArray.Text = "Reverse an array";
+            btnReverseArray.UseVisualStyleBackColor = true;
+            btnReverseArray.Click += btnReverseArray_Click;
+            // 
             // HomePage
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1029, 630);
+            Controls.Add(btnReverseArray);
+            Controls.Add(btnRemoveOccurrences);
             Controls.Add(btnSumArray);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -201,5 +226,7 @@
         private Label label2;
         private Label label3;
         private Button btnSumArray;
+        private Button btnRemoveOccurrences;
+        private Button btnReverseArray;
     }
 }

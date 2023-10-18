@@ -77,5 +77,19 @@ namespace SoftwareDevelopment
             fact.Show();
             this.Close();
         }
+
+        private void btnRemoveOccurrences_Click(object sender, EventArgs e)
+        {
+            RemoveOccurrences remOcc = new RemoveOccurrences();
+            remOcc.Show();
+            this.Close();
+        }
+
+        private void btnReverseArray_Click(object sender, EventArgs e)
+        {
+            ReverseArray revArr = new ReverseArray();
+            revArr.Show();
+            this.Close();
+        }
     }
 }
