@@ -41,6 +41,7 @@
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
+            label9 = new Label();
             SuspendLayout();
             // 
             // vScrollBar1
@@ -54,11 +55,11 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label8.Location = new Point(158, 412);
+            label8.Location = new Point(128, 389);
             label8.Name = "label8";
-            label8.Size = new Size(362, 18);
+            label8.Size = new Size(451, 18);
             label8.TabIndex = 35;
-            label8.Text = "* Check if the user input matches the reversed word";
+            label8.Text = "* Loop through length of user input adding each iteration to string";
             // 
             // btnBack
             // 
@@ -70,6 +71,7 @@
             btnBack.TabIndex = 34;
             btnBack.Text = "Back";
             btnBack.UseVisualStyleBackColor = false;
+            btnBack.Click += btnBack_Click;
             // 
             // btnClear
             // 
@@ -81,6 +83,7 @@
             btnClear.TabIndex = 33;
             btnClear.Text = "Clear";
             btnClear.UseVisualStyleBackColor = false;
+            btnClear.Click += btnClear_Click;
             // 
             // btnDisplay
             // 
@@ -92,6 +95,7 @@
             btnDisplay.TabIndex = 32;
             btnDisplay.Text = "Display";
             btnDisplay.UseVisualStyleBackColor = false;
+            btnDisplay.Click += btnDisplay_Click;
             // 
             // textBoxCode
             // 
@@ -106,51 +110,52 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(158, 373);
+            label7.Location = new Point(128, 355);
             label7.Name = "label7";
-            label7.Size = new Size(282, 18);
+            label7.Size = new Size(288, 18);
             label7.TabIndex = 30;
-            label7.Text = "* Pass user input to Palindrome method";
+            label7.Text = "* Create string variable to hold the output";
             // 
             // label6
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.Location = new Point(158, 334);
+            label6.Location = new Point(128, 321);
             label6.Name = "label6";
-            label6.Size = new Size(258, 18);
+            label6.Size = new Size(274, 18);
             label6.TabIndex = 29;
-            label6.Text = "* Loop through the length of the input";
+            label6.Text = "* Create variable for user number input";
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(158, 298);
+            label5.Location = new Point(128, 285);
             label5.Name = "label5";
-            label5.Size = new Size(226, 18);
+            label5.Size = new Size(357, 18);
             label5.TabIndex = 28;
-            label5.Text = "* Get the length of the user input";
+            label5.Text = "* Else return Fibonacci(num-1) + Fibonacci(num-2)";
+            label5.Click += label5_Click;
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(158, 264);
+            label4.Location = new Point(128, 247);
             label4.Name = "label4";
-            label4.Size = new Size(346, 18);
+            label4.Size = new Size(173, 18);
             label4.TabIndex = 27;
-            label4.Text = "* Create Palindrome method to reverse the string";
+            label4.Text = "* If num <= 1, return num";
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(158, 227);
+            label3.Location = new Point(128, 214);
             label3.Name = "label3";
-            label3.Size = new Size(140, 18);
+            label3.Size = new Size(383, 18);
             label3.TabIndex = 26;
-            label3.Text = "* Declare the string";
+            label3.Text = "* Create Fibonacci method that takes an int parameter";
             // 
             // label2
             // 
@@ -174,11 +179,22 @@
             label1.TabIndex = 24;
             label1.Text = "Fibonacci Series";
             // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label9.Location = new Point(128, 424);
+            label9.Name = "label9";
+            label9.Size = new Size(220, 18);
+            label9.TabIndex = 37;
+            label9.Text = "* Display the result of the string";
+            // 
             // FibonacciCode
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1119, 591);
+            Controls.Add(label9);
             Controls.Add(vScrollBar1);
             Controls.Add(label8);
             Controls.Add(btnBack);
@@ -213,5 +229,6 @@
         private Label label3;
         private Label label2;
         private Label label1;
+        private Label label9;
     }
 }
