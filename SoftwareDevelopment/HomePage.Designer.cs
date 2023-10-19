@@ -42,6 +42,8 @@
             btnSumArray = new Button();
             btnRemoveOccurrences = new Button();
             btnReverseArray = new Button();
+            btnSwap = new Button();
+            btnFibonacci = new Button();
             SuspendLayout();
             // 
             // btnRevStr
@@ -185,11 +187,34 @@
             btnReverseArray.UseVisualStyleBackColor = true;
             btnReverseArray.Click += btnReverseArray_Click;
             // 
+            // btnSwap
+            // 
+            btnSwap.Location = new Point(96, 513);
+            btnSwap.Margin = new Padding(4);
+            btnSwap.Name = "btnSwap";
+            btnSwap.Size = new Size(188, 59);
+            btnSwap.TabIndex = 16;
+            btnSwap.Text = "Swap two numbers";
+            btnSwap.UseVisualStyleBackColor = true;
+            btnSwap.Click += btnSwap_Click;
+            // 
+            // btnFibonacci
+            // 
+            btnFibonacci.Location = new Point(329, 513);
+            btnFibonacci.Name = "btnFibonacci";
+            btnFibonacci.Size = new Size(161, 59);
+            btnFibonacci.TabIndex = 15;
+            btnFibonacci.Text = "Fibonacci";
+            btnFibonacci.UseVisualStyleBackColor = true;
+            btnFibonacci.Click += btnFibonacci_Click;
+            // 
             // HomePage
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1029, 630);
+            Controls.Add(btnSwap);
+            Controls.Add(btnFibonacci);
             Controls.Add(btnReverseArray);
             Controls.Add(btnRemoveOccurrences);
             Controls.Add(btnSumArray);
@@ -228,5 +253,7 @@
         private Button btnSumArray;
         private Button btnRemoveOccurrences;
         private Button btnReverseArray;
+        private Button btnSwap;
+        private Button btnFibonacci;
     }
 }

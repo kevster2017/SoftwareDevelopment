@@ -91,5 +91,19 @@ namespace SoftwareDevelopment
             revArr.Show();
             this.Close();
         }
+
+        private void btnSwap_Click(object sender, EventArgs e)
+        {
+            SwapNumbers swap = new SwapNumbers();
+            swap.Show();
+            this.Close();
+        }
+
+        private void btnFibonacci_Click(object sender, EventArgs e)
+        {
+            Fibonacci fib = new Fibonacci();
+            fib.Show();
+            this.Close();
+        }
     }
 }
