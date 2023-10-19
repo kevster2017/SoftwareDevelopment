@@ -33,13 +33,13 @@ namespace SoftwareDevelopment
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-           
+
             outputLabel.Text = "";
         }
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            int[] array = {1, 2, 4, 5, 6, 8, 4, 6, 98 };
+            int[] array = { 1, 2, 4, 5, 6, 8, 4, 6, 98 };
             int sum = 0;
 
             for (int i = 0; i < array.Length; i++)

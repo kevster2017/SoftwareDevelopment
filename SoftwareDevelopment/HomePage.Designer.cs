@@ -44,6 +44,8 @@
             btnReverseArray = new Button();
             btnSwap = new Button();
             btnFibonacci = new Button();
+            btnSecondLargest = new Button();
+            btnAnagrams = new Button();
             SuspendLayout();
             // 
             // btnRevStr
@@ -208,11 +210,36 @@
             btnFibonacci.UseVisualStyleBackColor = true;
             btnFibonacci.Click += btnFibonacci_Click;
             // 
+            // btnSecondLargest
+            // 
+            btnSecondLargest.Location = new Point(546, 513);
+            btnSecondLargest.Margin = new Padding(4);
+            btnSecondLargest.Name = "btnSecondLargest";
+            btnSecondLargest.Size = new Size(161, 59);
+            btnSecondLargest.TabIndex = 17;
+            btnSecondLargest.Text = "Second largest array number";
+            btnSecondLargest.UseVisualStyleBackColor = true;
+            btnSecondLargest.Click += btnSecondLargest_Click;
+            // 
+            // btnAnagrams
+            // 
+            btnAnagrams.Location = new Point(546, 270);
+            btnAnagrams.Margin = new Padding(4);
+            btnAnagrams.Name = "btnAnagrams";
+            btnAnagrams.Size = new Size(161, 59);
+            btnAnagrams.TabIndex = 18;
+            btnAnagrams.Text = "Anagrams";
+            btnAnagrams.TextImageRelation = TextImageRelation.ImageAboveText;
+            btnAnagrams.UseVisualStyleBackColor = true;
+            btnAnagrams.Click += btnAnagrams_Click;
+            // 
             // HomePage
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1029, 630);
+            Controls.Add(btnAnagrams);
+            Controls.Add(btnSecondLargest);
             Controls.Add(btnSwap);
             Controls.Add(btnFibonacci);
             Controls.Add(btnReverseArray);
@@ -255,5 +282,7 @@
         private Button btnReverseArray;
         private Button btnSwap;
         private Button btnFibonacci;
+        private Button btnSecondLargest;
+        private Button btnAnagrams;
     }
 }

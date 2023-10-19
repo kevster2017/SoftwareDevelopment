@@ -105,5 +105,19 @@ namespace SoftwareDevelopment
             fib.Show();
             this.Close();
         }
+
+        private void btnSecondLargest_Click(object sender, EventArgs e)
+        {
+            SecondLargest second = new SecondLargest();
+            second.Show();
+            this.Close();
+        }
+
+        private void btnAnagrams_Click(object sender, EventArgs e)
+        {
+            Anagrams anagram = new Anagrams();
+            anagram.Show();
+            this.Close();
+        }
     }
 }
