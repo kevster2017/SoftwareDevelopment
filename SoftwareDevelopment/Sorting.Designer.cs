@@ -76,6 +76,7 @@
             btnInsertionSort.TabIndex = 12;
             btnInsertionSort.Text = "Insertion Sort";
             btnInsertionSort.UseVisualStyleBackColor = true;
+            btnInsertionSort.Click += btnInsertionSort_Click;
             // 
             // label1
             // 

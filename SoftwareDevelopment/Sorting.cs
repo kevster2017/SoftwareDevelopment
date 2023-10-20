@@ -30,5 +30,12 @@ namespace SoftwareDevelopment
             bubble.Show();
             this.Close();
         }
+
+        private void btnInsertionSort_Click(object sender, EventArgs e)
+        {
+            InsertionSort insert = new InsertionSort();
+            insert.Show();
+            this.Close();
+        }
     }
 }
