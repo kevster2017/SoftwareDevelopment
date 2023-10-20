@@ -119,5 +119,12 @@ namespace SoftwareDevelopment
             anagram.Show();
             this.Close();
         }
+
+        private void btnSorting_Click_1(object sender, EventArgs e)
+        {
+            Sorting sort = new Sorting();
+            sort.Show();
+            this.Close();
+        }
     }
 }

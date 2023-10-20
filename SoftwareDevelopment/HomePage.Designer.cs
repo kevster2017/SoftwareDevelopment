@@ -46,6 +46,7 @@
             btnFibonacci = new Button();
             btnSecondLargest = new Button();
             btnAnagrams = new Button();
+            btnSorting = new Button();
             SuspendLayout();
             // 
             // btnRevStr
@@ -233,11 +234,23 @@
             btnAnagrams.UseVisualStyleBackColor = true;
             btnAnagrams.Click += btnAnagrams_Click;
             // 
+            // btnSorting
+            // 
+            btnSorting.Location = new Point(890, 513);
+            btnSorting.Margin = new Padding(4);
+            btnSorting.Name = "btnSorting";
+            btnSorting.Size = new Size(161, 59);
+            btnSorting.TabIndex = 19;
+            btnSorting.Text = "Sorting >>>";
+            btnSorting.UseVisualStyleBackColor = true;
+            btnSorting.Click += btnSorting_Click_1;
+            // 
             // HomePage
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1029, 630);
+            ClientSize = new Size(1118, 636);
+            Controls.Add(btnSorting);
             Controls.Add(btnAnagrams);
             Controls.Add(btnSecondLargest);
             Controls.Add(btnSwap);
@@ -259,7 +272,7 @@
             Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             Margin = new Padding(4);
             Name = "HomePage";
-            Text = "HomePage";
+            Text = "Home ";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -284,5 +297,6 @@
         private Button btnFibonacci;
         private Button btnSecondLargest;
         private Button btnAnagrams;
+        private Button btnSorting;
     }
 }
