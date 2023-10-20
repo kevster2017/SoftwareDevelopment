@@ -23,5 +23,12 @@ namespace SoftwareDevelopment
             home.Show();
             this.Close();
         }
+
+        private void btnBubbleSort_Click(object sender, EventArgs e)
+        {
+            BubbleSort bubble = new BubbleSort();
+            bubble.Show();
+            this.Close();
+        }
     }
 }

@@ -98,6 +98,7 @@
             btnBubbleSort.TabIndex = 10;
             btnBubbleSort.Text = "Bubble Sort";
             btnBubbleSort.UseVisualStyleBackColor = true;
+            btnBubbleSort.Click += btnBubbleSort_Click;
             // 
             // btnHome
             // 
