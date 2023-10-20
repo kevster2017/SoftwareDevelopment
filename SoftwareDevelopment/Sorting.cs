@@ -37,5 +37,20 @@ namespace SoftwareDevelopment
             insert.Show();
             this.Close();
         }
+
+        private void btnBinary_Click(object sender, EventArgs e)
+        {
+           // BinarySearch binary = new BinarySearch();
+          //  binary.Show();
+          //  this.Close();
+        }
+        private void btnLinkedList_Click(object sender, EventArgs e)
+        {
+            LinkedList linked = new LinkedList();
+            linked.Show();
+            this.Close();
+        }
+
+      
     }
 }

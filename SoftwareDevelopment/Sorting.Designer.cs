@@ -56,6 +56,7 @@
             btnLinkedList.TabIndex = 14;
             btnLinkedList.Text = "Reverse Linked List";
             btnLinkedList.UseVisualStyleBackColor = true;
+            btnLinkedList.Click += btnLinkedList_Click;
             // 
             // btnBinary
             // 
@@ -66,6 +67,7 @@
             btnBinary.TabIndex = 13;
             btnBinary.Text = "Binary Search";
             btnBinary.UseVisualStyleBackColor = true;
+            btnBinary.Click += btnBinary_Click;
             // 
             // btnInsertionSort
             // 
