@@ -49,35 +49,38 @@
             // 
             // btnLinkedList
             // 
+            btnLinkedList.BackColor = Color.FromArgb(128, 255, 128);
             btnLinkedList.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnLinkedList.Location = new Point(819, 198);
             btnLinkedList.Name = "btnLinkedList";
             btnLinkedList.Size = new Size(151, 59);
             btnLinkedList.TabIndex = 14;
             btnLinkedList.Text = "Reverse Linked List";
-            btnLinkedList.UseVisualStyleBackColor = true;
+            btnLinkedList.UseVisualStyleBackColor = false;
             btnLinkedList.Click += btnLinkedList_Click;
             // 
             // btnBinary
             // 
+            btnBinary.BackColor = Color.FromArgb(128, 255, 128);
             btnBinary.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnBinary.Location = new Point(621, 198);
             btnBinary.Name = "btnBinary";
             btnBinary.Size = new Size(161, 59);
             btnBinary.TabIndex = 13;
             btnBinary.Text = "Binary Search";
-            btnBinary.UseVisualStyleBackColor = true;
+            btnBinary.UseVisualStyleBackColor = false;
             btnBinary.Click += btnBinary_Click;
             // 
             // btnInsertionSort
             // 
+            btnInsertionSort.BackColor = Color.FromArgb(128, 255, 128);
             btnInsertionSort.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnInsertionSort.Location = new Point(404, 198);
             btnInsertionSort.Name = "btnInsertionSort";
             btnInsertionSort.Size = new Size(161, 59);
             btnInsertionSort.TabIndex = 12;
             btnInsertionSort.Text = "Insertion Sort";
-            btnInsertionSort.UseVisualStyleBackColor = true;
+            btnInsertionSort.UseVisualStyleBackColor = false;
             btnInsertionSort.Click += btnInsertionSort_Click;
             // 
             // label1
@@ -93,6 +96,7 @@
             // 
             // btnBubbleSort
             // 
+            btnBubbleSort.BackColor = Color.FromArgb(128, 255, 128);
             btnBubbleSort.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnBubbleSort.Location = new Point(171, 198);
             btnBubbleSort.Margin = new Padding(4);
@@ -100,19 +104,21 @@
             btnBubbleSort.Size = new Size(188, 59);
             btnBubbleSort.TabIndex = 10;
             btnBubbleSort.Text = "Bubble Sort";
-            btnBubbleSort.UseVisualStyleBackColor = true;
+            btnBubbleSort.UseVisualStyleBackColor = false;
             btnBubbleSort.Click += btnBubbleSort_Click;
             // 
             // btnHome
             // 
+            btnHome.BackColor = Color.FromArgb(192, 255, 255);
             btnHome.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnHome.Location = new Point(171, 420);
+            btnHome.ForeColor = Color.Black;
+            btnHome.Location = new Point(171, 454);
             btnHome.Margin = new Padding(4);
             btnHome.Name = "btnHome";
-            btnHome.Size = new Size(188, 59);
+            btnHome.Size = new Size(131, 33);
             btnHome.TabIndex = 16;
             btnHome.Text = "<<< Home";
-            btnHome.UseVisualStyleBackColor = true;
+            btnHome.UseVisualStyleBackColor = false;
             btnHome.Click += btnHome_Click;
             // 
             // Sorting
