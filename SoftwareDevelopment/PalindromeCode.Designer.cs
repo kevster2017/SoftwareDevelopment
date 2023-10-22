@@ -87,7 +87,7 @@
             textBoxCode.ScrollBars = ScrollBars.Vertical;
             textBoxCode.Size = new Size(376, 344);
             textBoxCode.TabIndex = 18;
-            textBoxCode.TextChanged += textBoxCode_TextChanged;
+           // textBoxCode.TextChanged += textBoxCode_TextChanged;
             // 
             // label7
             // 
@@ -98,7 +98,7 @@
             label7.Size = new Size(282, 18);
             label7.TabIndex = 17;
             label7.Text = "* Pass user input to Palindrome method";
-            label7.Click += label7_Click;
+        
             // 
             // label6
             // 
@@ -109,7 +109,7 @@
             label6.Size = new Size(258, 18);
             label6.TabIndex = 16;
             label6.Text = "* Loop through the length of the input";
-            label6.Click += label6_Click;
+           
             // 
             // label5
             // 
@@ -120,7 +120,7 @@
             label5.Size = new Size(226, 18);
             label5.TabIndex = 15;
             label5.Text = "* Get the length of the user input";
-            label5.Click += label5_Click;
+          
             // 
             // label4
             // 
@@ -142,7 +142,7 @@
             label3.Size = new Size(140, 18);
             label3.TabIndex = 13;
             label3.Text = "* Declare the string";
-            label3.Click += label3_Click;
+         
             // 
             // label2
             // 
@@ -154,7 +154,7 @@
             label2.Size = new Size(232, 23);
             label2.TabIndex = 12;
             label2.Text = "How to determine Palindrome";
-            label2.Click += label2_Click;
+          
             // 
             // label1
             // 
@@ -166,7 +166,7 @@
             label1.Size = new Size(425, 23);
             label1.TabIndex = 11;
             label1.Text = "Determine if a string is a Palindrome";
-            label1.Click += label1_Click;
+           
             // 
             // label8
             // 
@@ -177,7 +177,7 @@
             label8.Size = new Size(362, 18);
             label8.TabIndex = 22;
             label8.Text = "* Check if the user input matches the reversed word";
-            label8.Click += label8_Click;
+          
             // 
             // PalindromeCode
             // 
