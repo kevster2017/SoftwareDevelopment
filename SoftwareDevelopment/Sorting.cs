@@ -40,9 +40,9 @@ namespace SoftwareDevelopment
 
         private void btnBinary_Click(object sender, EventArgs e)
         {
-           // BinarySearch binary = new BinarySearch();
-          //  binary.Show();
-          //  this.Close();
+            BinarySearch binary = new BinarySearch();
+            binary.Show();
+            this.Close();
         }
         private void btnLinkedList_Click(object sender, EventArgs e)
         {
