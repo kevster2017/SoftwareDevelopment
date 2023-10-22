@@ -118,6 +118,7 @@
             textBoxCode.Location = new Point(648, 140);
             textBoxCode.Multiline = true;
             textBoxCode.Name = "textBoxCode";
+            textBoxCode.ScrollBars = ScrollBars.Vertical;
             textBoxCode.Size = new Size(376, 344);
             textBoxCode.TabIndex = 7;
             textBoxCode.TextChanged += textBox1_TextChanged;

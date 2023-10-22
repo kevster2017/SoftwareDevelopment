@@ -31,7 +31,6 @@
             label7 = new Label();
             label6 = new Label();
             label5 = new Label();
-            vScrollBar1 = new VScrollBar();
             label8 = new Label();
             btnBack = new Button();
             btnClear = new Button();
@@ -75,13 +74,6 @@
             label5.Size = new Size(325, 18);
             label5.TabIndex = 99;
             label5.Text = "* Array.Sort() each variable from previous step";
-            // 
-            // vScrollBar1
-            // 
-            vScrollBar1.Location = new Point(964, 164);
-            vScrollBar1.Name = "vScrollBar1";
-            vScrollBar1.Size = new Size(17, 344);
-            vScrollBar1.TabIndex = 98;
             // 
             // label8
             // 
@@ -135,6 +127,7 @@
             textBoxCode.Location = new Point(585, 161);
             textBoxCode.Multiline = true;
             textBoxCode.Name = "textBoxCode";
+            textBoxCode.ScrollBars = ScrollBars.Vertical;
             textBoxCode.Size = new Size(376, 344);
             textBoxCode.TabIndex = 93;
             // 
@@ -221,7 +214,6 @@
             Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(label5);
-            Controls.Add(vScrollBar1);
             Controls.Add(label8);
             Controls.Add(btnBack);
             Controls.Add(btnClear);
@@ -242,7 +234,6 @@
         private Label label7;
         private Label label6;
         private Label label5;
-        private VScrollBar vScrollBar1;
         private Label label8;
         private Button btnBack;
         private Button btnClear;

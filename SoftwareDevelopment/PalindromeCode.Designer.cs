@@ -40,7 +40,6 @@
             label2 = new Label();
             label1 = new Label();
             label8 = new Label();
-            vScrollBar1 = new VScrollBar();
             SuspendLayout();
             // 
             // btnBack
@@ -85,6 +84,7 @@
             textBoxCode.Location = new Point(638, 142);
             textBoxCode.Multiline = true;
             textBoxCode.Name = "textBoxCode";
+            textBoxCode.ScrollBars = ScrollBars.Vertical;
             textBoxCode.Size = new Size(376, 344);
             textBoxCode.TabIndex = 18;
             textBoxCode.TextChanged += textBoxCode_TextChanged;
@@ -179,20 +179,11 @@
             label8.Text = "* Check if the user input matches the reversed word";
             label8.Click += label8_Click;
             // 
-            // vScrollBar1
-            // 
-            vScrollBar1.Location = new Point(1017, 142);
-            vScrollBar1.Name = "vScrollBar1";
-            vScrollBar1.Size = new Size(17, 344);
-            vScrollBar1.TabIndex = 23;
-            vScrollBar1.Scroll += vScrollBar1_Scroll;
-            // 
             // PalindromeCode
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1148, 623);
-            Controls.Add(vScrollBar1);
             Controls.Add(label8);
             Controls.Add(btnBack);
             Controls.Add(btnClear);
@@ -225,6 +216,5 @@
         private Label label2;
         private Label label1;
         private Label label8;
-        private VScrollBar vScrollBar1;
     }
 }

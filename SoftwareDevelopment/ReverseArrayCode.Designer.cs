@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            vScrollBar1 = new VScrollBar();
             label8 = new Label();
             btnBack = new Button();
             btnClear = new Button();
@@ -39,13 +38,6 @@
             label2 = new Label();
             label1 = new Label();
             SuspendLayout();
-            // 
-            // vScrollBar1
-            // 
-            vScrollBar1.Location = new Point(931, 162);
-            vScrollBar1.Name = "vScrollBar1";
-            vScrollBar1.Size = new Size(17, 344);
-            vScrollBar1.TabIndex = 75;
             // 
             // label8
             // 
@@ -99,6 +91,7 @@
             textBoxCode.Location = new Point(552, 159);
             textBoxCode.Multiline = true;
             textBoxCode.Name = "textBoxCode";
+            textBoxCode.ScrollBars = ScrollBars.Vertical;
             textBoxCode.Size = new Size(376, 344);
             textBoxCode.TabIndex = 70;
             // 
@@ -149,7 +142,6 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1029, 573);
-            Controls.Add(vScrollBar1);
             Controls.Add(label8);
             Controls.Add(btnBack);
             Controls.Add(btnClear);
@@ -166,8 +158,6 @@
         }
 
         #endregion
-
-        private VScrollBar vScrollBar1;
         private Label label8;
         private Button btnBack;
         private Button btnClear;
