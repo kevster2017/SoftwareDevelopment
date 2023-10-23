@@ -1,5 +1,5 @@
 # SoftwareDevelopment
-This application covers basic programmng challenges in software development involving Strings, Integers and Sorting. 
+This application covers basic programming challenges in software development involving Strings, Integers and Sorting. 
 This includes: reversing a string, anagrams, Fibonacci Series, Factorial of Integers and Bubble Sort.
 
 ## Development
