@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace SoftwareDevelopment
 {
@@ -53,18 +54,26 @@ namespace SoftwareDevelopment
 
                 return rev;
             }
-
             string pal = Palindrome(userInput);
 
-
-            if (pal == userInput)
+            if (String.IsNullOrEmpty(pal))
             {
-                outputLabel.Text = ($"{userInput} IS a Palindrome");
+                outputLabel.Text = "Please enter some text";
             }
+
             else
             {
-                outputLabel.Text = $"{userInput} IS NOT a Palindrome";
+                if (pal == userInput)
+                {
+                    outputLabel.Text = ($"{userInput} IS a Palindrome");
+                }
+                else
+                {
+                    outputLabel.Text = $"{userInput} IS NOT a Palindrome";
+                }
             }
+
+          
 
         }
 

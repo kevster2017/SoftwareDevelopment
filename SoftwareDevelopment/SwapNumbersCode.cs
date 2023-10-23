@@ -19,7 +19,7 @@ namespace SoftwareDevelopment
 
         private void btnDisplay_Click(object sender, EventArgs e)
         {
-            string str = "private void btnSubmit_Click(object sender, EventArgs e)\r\n        {\r\n            int num1 = Convert.ToInt32(textBoxNum1.Text);\r\n            int num2 = Convert.ToInt32(textBoxNum2.Text);\r\n\r\n            num2 = num1 + num2;\r\n            num1 = num2 - num1;\r\n            num2 = num2 - num1;\r\n\r\n            outputLabel.Text = $\"First number is now {num2} and second number is now {num1}\";\r\n\r\n        }";
+            string str = "private void btnSubmit_Click(object sender, EventArgs e)\r\n        {\r\n            int num1 = Convert.ToInt32(textBoxNum1.Text);\r\n            int num2 = Convert.ToInt32(textBoxNum2.Text);\r\n\r\n            num2 = num1 + num2;\r\n            num1 = num2 - num1;\r\n            num2 = num2 - num1;\r\n\r\n            outputLabel.Text = $\"First number is now {num1} and second number is now {num2}\";\r\n\r\n        }";
             textBoxCode.Text = str;
         }
 

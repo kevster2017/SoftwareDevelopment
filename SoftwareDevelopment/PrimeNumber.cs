@@ -20,9 +20,6 @@ namespace SoftwareDevelopment
         private void btnSubmit_Click(object sender, EventArgs e)
         {
 
-            int userInput = Convert.ToInt32(txtString.Text);
-
-
             static Boolean isPrime(int n)
             {
                 if (n == 0 || n == 1)
@@ -45,18 +42,47 @@ namespace SoftwareDevelopment
                 return true;
             }
 
-            Boolean res = isPrime(userInput);
+            string text = textBoxNum.Text;
+            int num;
 
 
-            if (res == false)
+            if (String.IsNullOrEmpty(text))
             {
-                outputLabel.Text = ($"{userInput} IS NOT a prime number");
+                outputLabel.Text = "Please enter a value";
             }
-
             else
             {
-                outputLabel.Text = ($"{userInput} IS a prime number");
+
+                if (int.TryParse(text, out num))
+                {
+
+                    int userInput = Convert.ToInt32(textBoxNum.Text);
+
+
+                    Boolean res = isPrime(userInput);
+
+
+                    if (res == false)
+                    {
+                        outputLabel.Text = ($"{userInput} IS NOT a prime number");
+                    }
+
+                    else
+                    {
+                        outputLabel.Text = ($"{userInput} IS a prime number");
+                    }
+
+                }
+
+                else
+                {
+                    outputLabel.Text = "Please enter a valid number";
+                }
+
+
+
             }
+
 
 
 
@@ -64,7 +90,7 @@ namespace SoftwareDevelopment
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-            txtString.Clear();
+            textBoxNum.Clear();
             outputLabel.Text = "";
         }
 

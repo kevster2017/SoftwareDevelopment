@@ -34,7 +34,7 @@
             label3 = new Label();
             btnViewCode = new Button();
             btnBack = new Button();
-            txtString = new TextBox();
+            textBoxNum = new TextBox();
             label2 = new Label();
             label1 = new Label();
             SuspendLayout();
@@ -107,12 +107,12 @@
             btnBack.UseVisualStyleBackColor = false;
             btnBack.Click += btnBack_Click;
             // 
-            // txtString
+            // textBoxNum
             // 
-            txtString.Location = new Point(333, 150);
-            txtString.Name = "txtString";
-            txtString.Size = new Size(265, 23);
-            txtString.TabIndex = 30;
+            textBoxNum.Location = new Point(333, 150);
+            textBoxNum.Name = "textBoxNum";
+            textBoxNum.Size = new Size(265, 23);
+            textBoxNum.TabIndex = 30;
             // 
             // label2
             // 
@@ -145,7 +145,7 @@
             Controls.Add(label3);
             Controls.Add(btnViewCode);
             Controls.Add(btnBack);
-            Controls.Add(txtString);
+            Controls.Add(textBoxNum);
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "Factorial";
@@ -162,7 +162,7 @@
         private Label label3;
         private Button btnViewCode;
         private Button btnBack;
-        private TextBox txtString;
+        private TextBox textBoxNum;
         private Label label2;
         private Label label1;
     }

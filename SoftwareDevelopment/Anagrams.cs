@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 using System.Windows.Forms;
 
 namespace SoftwareDevelopment
@@ -23,34 +24,44 @@ namespace SoftwareDevelopment
             string str2 = textString2.Text;
             bool isAnagram = false;
 
-            if (str1.Length != str2.Length)
+            if(String.IsNullOrEmpty(str1) || String.IsNullOrEmpty(str2))
             {
-                outputLabel.Text = $"{str1} and {str2} are not anagrams - Different number of characters";
-            }
-            else
+                outputLabel.Text = "Please enter a value in both fields";
+            } else
             {
-                char[] anagram1 = str1.ToCharArray();
-                char[] anagram2 = str2.ToCharArray();
-
-                Array.Sort(anagram1);
-                Array.Sort(anagram2);
-
-                isAnagram = Enumerable.SequenceEqual(anagram1, anagram2);
-
-                if (isAnagram)
+                if (str1.Length != str2.Length)
                 {
-                    outputLabel.Text = $"{str1} and {str2} are anagrams";
+                    outputLabel.Text = $"{str1} and {str2} are not anagrams - Different number of characters";
                 }
                 else
                 {
-                    outputLabel.Text = $"{str1} and {str2} are not anagrams";
+                    char[] anagram1 = str1.ToCharArray();
+                    char[] anagram2 = str2.ToCharArray();
+
+                    Array.Sort(anagram1);
+                    Array.Sort(anagram2);
+
+                    isAnagram = Enumerable.SequenceEqual(anagram1, anagram2);
+
+                    if (isAnagram)
+                    {
+                        outputLabel.Text = $"{str1} and {str2} are anagrams";
+                    }
+                    else
+                    {
+                        outputLabel.Text = $"{str1} and {str2} are not anagrams";
+                    }
                 }
             }
+
+        
 
         }
 
         private void btnClear_Click(object sender, EventArgs e)
         {
+            textString1.Text = "";
+            textString2.Text = "";
             outputLabel.Text = "";
         }
 

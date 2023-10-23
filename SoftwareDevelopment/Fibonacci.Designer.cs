@@ -34,7 +34,7 @@
             label3 = new Label();
             btnViewCode = new Button();
             btnBack = new Button();
-            textNum = new TextBox();
+            textBoxNum = new TextBox();
             label2 = new Label();
             label1 = new Label();
             SuspendLayout();
@@ -107,12 +107,12 @@
             btnBack.UseVisualStyleBackColor = false;
             btnBack.Click += btnBack_Click;
             // 
-            // textNum
+            // textBoxNum
             // 
-            textNum.Location = new Point(496, 231);
-            textNum.Name = "textNum";
-            textNum.Size = new Size(37, 23);
-            textNum.TabIndex = 39;
+            textBoxNum.Location = new Point(496, 231);
+            textBoxNum.Name = "textBoxNum";
+            textBoxNum.Size = new Size(37, 23);
+            textBoxNum.TabIndex = 39;
             // 
             // label2
             // 
@@ -145,7 +145,7 @@
             Controls.Add(label3);
             Controls.Add(btnViewCode);
             Controls.Add(btnBack);
-            Controls.Add(textNum);
+            Controls.Add(textBoxNum);
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "Fibonacci";
@@ -162,7 +162,7 @@
         private Label label3;
         private Button btnViewCode;
         private Button btnBack;
-        private TextBox textNum;
+        private TextBox textBoxNum;
         private Label label2;
         private Label label1;
     }

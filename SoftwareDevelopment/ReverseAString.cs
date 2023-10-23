@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace SoftwareDevelopment
 {
@@ -46,8 +47,7 @@ namespace SoftwareDevelopment
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            string userInput = txtString.Text;
-
+            
             static string Reverse(string userInput)
             {
                 string rev = "";
@@ -57,14 +57,19 @@ namespace SoftwareDevelopment
                 {
                     rev += userInput[i];
                 }
-
                 return rev;
             }
 
+            string userInput = txtString.Text;
 
-
-            outputLabel.Text = Reverse(userInput);
-
+            if (String.IsNullOrEmpty(userInput))
+            {
+                outputLabel.Text = "Please enter a value";
+            }
+            else
+            {
+                outputLabel.Text = Reverse(userInput);
+            }
 
         }
 

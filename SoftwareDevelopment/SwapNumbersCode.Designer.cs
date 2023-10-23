@@ -106,7 +106,7 @@
             label7.Name = "label7";
             label7.Size = new Size(190, 18);
             label7.TabIndex = 30;
-            label7.Text = "* Set num1 = num2 - num1";
+            label7.Text = "* Set num2 = num2 - num1";
             // 
             // label6
             // 

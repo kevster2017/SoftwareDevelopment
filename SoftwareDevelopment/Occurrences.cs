@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace SoftwareDevelopment
 {
@@ -55,12 +56,31 @@ namespace SoftwareDevelopment
                 return count;
             }
 
-            string st = txtString.Text;
-            char c = textBoxChar.Text[0];
+            if (String.IsNullOrEmpty(txtString.Text) || String.IsNullOrEmpty(textBoxChar.Text))
+            {
+                outputLabel.Text = "Please enter a value in both input fields";
+            }
+            else
+            {
 
-            int count = Occur(st, c);
+                string st = txtString.Text;
+                char c = textBoxChar.Text[0];
 
-            outputLabel.Text = ($"The letter {c} appears in {st} {count} times");
+                int count = Occur(st, c);
+
+                if (count == 1)
+                {
+                    outputLabel.Text = ($"The letter {c} appears in {st} {count} time");
+                } 
+                else
+                {
+                    outputLabel.Text = ($"The letter {c} appears in {st} {count} times");
+                }
+               
+
+
+            }
+
         }
     }
 }

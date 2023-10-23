@@ -43,7 +43,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(570, 260);
+            label4.Location = new Point(570, 236);
             label4.Name = "label4";
             label4.Size = new Size(219, 21);
             label4.TabIndex = 65;
@@ -77,7 +77,7 @@
             // 
             outputLabel.AutoSize = true;
             outputLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            outputLabel.Location = new Point(574, 352);
+            outputLabel.Location = new Point(574, 328);
             outputLabel.Name = "outputLabel";
             outputLabel.Size = new Size(59, 21);
             outputLabel.TabIndex = 62;
@@ -87,11 +87,11 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(367, 352);
+            label3.Location = new Point(367, 328);
             label3.Name = "label3";
-            label3.Size = new Size(150, 21);
+            label3.Size = new Size(163, 21);
             label3.TabIndex = 61;
-            label3.Text = "Bubble Sorted Array";
+            label3.Text = "Insertion Sorted Array";
             // 
             // btnViewCode
             // 
@@ -121,7 +121,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(367, 260);
+            label2.Location = new Point(367, 236);
             label2.Name = "label2";
             label2.Size = new Size(108, 21);
             label2.TabIndex = 58;

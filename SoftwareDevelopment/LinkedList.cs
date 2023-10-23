@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace SoftwareDevelopment
 {
@@ -21,29 +22,42 @@ namespace SoftwareDevelopment
         {
             LinkedList<string> list = new LinkedList<string>();
 
-            list.AddLast(textString1.Text);
-            list.AddLast(textString2.Text);
-            list.AddLast(textString3.Text);
 
-            string original = "";
-
-            foreach (string item in list)
+            if (String.IsNullOrEmpty(textString1.Text) || String.IsNullOrEmpty(textString2.Text) || String.IsNullOrEmpty(textString3.Text))
             {
-                original += item + " ";
+                outputLabel.Text = "Please enter a value for each input field";
             }
-
-            outputLabel.Text = original;
-
-            var listRev = new LinkedList<string>(list.Reverse());
-
-            string reversed = "";
-
-            foreach (string item in listRev)
+            else
             {
-                reversed += item + " ";   
-            }
 
-            RevOutputLabel.Text = reversed;
+
+                    list.AddLast(textString1.Text);
+                    list.AddLast(textString2.Text);
+                    list.AddLast(textString3.Text);
+
+                    string original = "";
+
+                    foreach (string item in list)
+                    {
+                        original += item + " ";
+                    }
+
+                    outputLabel.Text = original;
+
+                    var listRev = new LinkedList<string>(list.Reverse());
+
+                    string reversed = "";
+
+                    foreach (string item in listRev)
+                    {
+                        reversed += item + " ";
+                    }
+
+                    RevOutputLabel.Text = reversed;
+
+
+            }
+          
         }
 
 

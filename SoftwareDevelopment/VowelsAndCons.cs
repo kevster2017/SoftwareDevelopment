@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace SoftwareDevelopment
 {
@@ -71,8 +72,22 @@ namespace SoftwareDevelopment
             Tuple<int, int> counts = Count(st);
             int vowels = counts.Item1;
             int cons = counts.Item2;
-           
-            outputLabel.Text = ($"The string {st} contains \n{vowels} vowels and \n{cons} consonants");
+            int num;
+
+            if (String.IsNullOrEmpty(st))
+            {
+                outputLabel.Text = "Please enter a value";
+            }
+
+            else if (int.TryParse(st, out num))
+            {
+                outputLabel.Text = "Please enter a valid string, numbers not allowed";
+            }
+            else
+
+            {
+                outputLabel.Text = ($"The string {st} contains \n{vowels} vowels and \n{cons} consonants");
+            }
         }
 
     }

@@ -45,6 +45,7 @@ namespace SoftwareDevelopment
 
                 return -1;
             }
+
             int[] arr = { 50, 99, 7, 83, 67, 1, 5, 15, 88 };
 
             Array.Sort(arr);
@@ -53,18 +54,43 @@ namespace SoftwareDevelopment
 
             outputLabelSorted.Text = sorted;
 
-            int target = Convert.ToInt32(textBoxNum.Text);
+            string text = textBoxNum.Text;
+            int num;
 
-            int result = Search(arr, target);
-
-            if (result != -1)
+            
+            if (String.IsNullOrEmpty(text))
             {
-                outputLabel.Text = $"Element {target} found at index {result}";
+                outputLabel.Text = "Please enter a value";
             }
             else
+
             {
-                outputLabel.Text = $"Element {target} not found in array";
+                
+
+                if (int.TryParse(text, out num))
+                {
+                    int target = Convert.ToInt32(text);
+                    int result = Search(arr, target); 
+
+                    if (result != -1)
+                    {
+                        outputLabel.Text = $"Element {target} found at index {result}";
+                    }
+                    else
+                    {
+                        outputLabel.Text = $"Element {target} not found in array";
+                    }
+                }
+
+                else
+                {
+                    outputLabel.Text = "Please enter a valid number";
+                }
+
+              
+
             }
+
 
 
         }

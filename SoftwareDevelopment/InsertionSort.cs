@@ -21,11 +21,11 @@ namespace SoftwareDevelopment
         {
             int[] arr = { 50, 99, 7, 83, 67, 1, 5, 15, 88 };
 
-            for (int i=0; i<arr.Length; i++)
+            for (int i = 0; i < arr.Length; i++)
             {
                 int j = i;
 
-                while(j > 0 && arr[j-1] > arr[j])
+                while (j > 0 && arr[j - 1] > arr[j])
                 {
                     int temp = arr[j];
                     arr[j] = arr[j - 1];
@@ -36,7 +36,7 @@ namespace SoftwareDevelopment
 
             string sorted = "";
 
-            for (int i= 0; i<arr.Length;i++)
+            for (int i = 0; i < arr.Length; i++)
             {
                 sorted += arr[i] + ", ";
             }

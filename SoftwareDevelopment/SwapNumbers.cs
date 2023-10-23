@@ -19,14 +19,41 @@ namespace SoftwareDevelopment
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            int num1 = Convert.ToInt32(textBoxNum1.Text);
-            int num2 = Convert.ToInt32(textBoxNum2.Text);
+            string text1= textBoxNum1.Text;
+            string text2 = textBoxNum2.Text;
+            int num;
 
-            num2 = num1 + num2;
-            num1 = num2 - num1;
-            num2 = num2 - num1;
 
-            outputLabel.Text = $"First number is now {num2} and second number is now {num1}";
+            if (String.IsNullOrEmpty(text1) || String.IsNullOrEmpty(text2))
+            {
+                outputLabel.Text = "Please enter a value in each field";
+            }
+            else
+
+            {
+
+
+                if (int.TryParse(text1, out num) && int.TryParse(text2, out num))
+                {
+                    int num1 = Convert.ToInt32(textBoxNum1.Text);
+                    int num2 = Convert.ToInt32(textBoxNum2.Text);
+
+                    num2 = num1 + num2;
+                    num1 = num2 - num1;
+                    num2 = num2 - num1;
+
+                    outputLabel.Text = $"First number is now {num1} and second number is now {num2}";
+
+                }
+
+                else
+                {
+                    outputLabel.Text = "Please enter a valid number";
+                }
+
+
+
+            }
 
         }
 

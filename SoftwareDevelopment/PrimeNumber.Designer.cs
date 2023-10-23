@@ -34,7 +34,7 @@
             label3 = new Label();
             btnViewCode = new Button();
             btnBack = new Button();
-            txtString = new TextBox();
+            textBoxNum = new TextBox();
             label2 = new Label();
             label1 = new Label();
             SuspendLayout();
@@ -109,13 +109,13 @@
             btnBack.UseVisualStyleBackColor = false;
             btnBack.Click += btnBack_Click;
             // 
-            // txtString
+            // textBoxNum
             // 
-            txtString.Location = new Point(339, 150);
-            txtString.Name = "txtString";
-            txtString.Size = new Size(265, 23);
-            txtString.TabIndex = 21;
-            txtString.TextChanged += txtString_TextChanged;
+            textBoxNum.Location = new Point(339, 150);
+            textBoxNum.Name = "textBoxNum";
+            textBoxNum.Size = new Size(265, 23);
+            textBoxNum.TabIndex = 21;
+            textBoxNum.TextChanged += txtString_TextChanged;
             // 
             // label2
             // 
@@ -150,7 +150,7 @@
             Controls.Add(label3);
             Controls.Add(btnViewCode);
             Controls.Add(btnBack);
-            Controls.Add(txtString);
+            Controls.Add(textBoxNum);
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "PrimeNumber";
@@ -167,7 +167,7 @@
         private Label label3;
         private Button btnViewCode;
         private Button btnBack;
-        private TextBox txtString;
+        private TextBox textBoxNum;
         private Label label2;
         private Label label1;
     }

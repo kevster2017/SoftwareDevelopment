@@ -24,22 +24,47 @@ namespace SoftwareDevelopment
                 if (n == 0)
                 {
                     return 1;
-                } else
+                }
+                else
                 {
-                    return (n * Factorial(n-1));    
+                    return (n * Factorial(n - 1));
                 }
             }
 
-            long num = Convert.ToInt32(txtString.Text);
 
-            long res = Factorial(num);
+            string text = textBoxNum.Text;
+            int num;
 
-            outputLabel.Text = $"The Factorial of {num} is {res}";
+
+            if (String.IsNullOrEmpty(text))
+            {
+                outputLabel.Text = "Please enter a value";
+            }
+            else
+            {
+
+                if (int.TryParse(text, out num))
+                {
+                    long factNum = Convert.ToInt32(textBoxNum.Text);
+
+                    long res = Factorial(num);
+
+                    outputLabel.Text = $"The Factorial of {factNum} is {res}";
+
+                }
+                else
+                {
+                    outputLabel.Text = "Please enter a valid number";
+                }
+
+            }
+
+
         }
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-            txtString.Clear();
+            textBoxNum.Clear();
             outputLabel.Text = "";
         }
 

@@ -21,28 +21,54 @@ namespace SoftwareDevelopment
         {
             static int Fibonacci(int n)
             {
-                if (n <=1)
+                if (n <= 1)
                 {
                     return n;
-                } else
+                }
+                else
                 {
-                    return Fibonacci(n-1) + Fibonacci(n -2);
+                    return Fibonacci(n - 1) + Fibonacci(n - 2);
                 }
             }
+            string text = textBoxNum.Text;
+            int num;
 
-            int num = Convert.ToInt32(textNum.Text);
-            string str = "";
 
-            for (int i = 0; i < num; i++) {
-                str += (Fibonacci(i) + " ");
+            if (String.IsNullOrEmpty(text))
+            {
+                outputLabel.Text = "Please enter a value";
             }
+            else
 
-            outputLabel.Text = $"Fibinacci series of {num}: {str}";
+            {
+
+                if (int.TryParse(text, out num))
+                {
+                    int fibNum = Convert.ToInt32(textBoxNum.Text);
+                    string str = "";
+
+                    for (int i = 0; i < num; i++)
+                    {
+                        str += (Fibonacci(i) + " ");
+                    }
+
+                    outputLabel.Text = $"Fibinacci series of {fibNum}: {str}";
+
+                }
+
+                else
+                {
+                    outputLabel.Text = "Please enter a valid number";
+                }
+
+
+            }
+          
         }
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-            textNum.Clear();
+            textBoxNum.Clear();
             outputLabel.Text = "";
         }
 
